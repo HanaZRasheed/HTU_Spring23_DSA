@@ -36,6 +36,15 @@ public class ListClassV3 {
 	}
 	
 	public void insertItem(int item,int pos) {
+		if(end==maxsize-1) {
+			// update maxsize
+			maxsize=maxsize*2;
+			int [] b=new int[maxsize];
+			for(int i=0;i<arr.length;i++) {
+				b[i]=arr[i];
+			}
+			arr=b;	
+		}
 		end++;
 		for(int i=end;i>pos;i--) {
 			arr[i]=arr[i-1];

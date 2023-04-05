@@ -29,6 +29,10 @@ public class Test3 {
 		myList.insertItem(4);
 		myList.print();
 		myList.insertItem(40);
+		myList.insertItem(1000, 1);
+		myList.print();
+		myList.insertItem(2000, 2);
+		myList.print();
 		
 	}
 
