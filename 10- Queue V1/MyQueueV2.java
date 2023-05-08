@@ -21,7 +21,7 @@ public class MyQueueV2 {
 			rear++;
 			front++;
 		}else if(((rear+1)%size) == front) {
-			System.out.println("the array is full, the front index is " + 0);
+			System.out.println("the array is full, the front index is " + front);
 			throw new IllegalAccessError();
 		} else {
 			rear=rear+1%size;
